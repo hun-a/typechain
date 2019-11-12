@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \"node ./dist/index.js\""
   },
   "repository": {
     "type": "git",
@@ -17,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/hun-a/typechain/issues"
   },
-  "homepage": "https://github.com/hun-a/typechain#readme"
+  "homepage": "https://github.com/hun-a/typechain#readme",
+  "devDependencies": {
+    "tsc-watch": "^4.0.0",
+    "typescript": "^3.7.2"
+  }
 }
